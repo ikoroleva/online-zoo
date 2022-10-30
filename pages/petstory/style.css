@@ -1,0 +1,185 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F3F2;
+    margin: 0;
+    padding: 0;
+}
+
+.container-centered {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+.header {
+    background-color: #000;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    column-gap: 30px;
+    z-index: 10;
+
+}
+
+
+
+.header__logo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.header__logo>h1 {
+    visibility: hidden;
+}
+
+.desined-by-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.nav {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+}
+
+.list__item a {
+    color: #fff;
+    padding: 0 30px;
+    text-decoration: 0;
+}
+
+/* WATCH ONLINE BLOCK */
+
+.watch-online {
+    height: 780px;
+    position: relative;
+    bottom: 80px;
+    background-image: url("../../assets/images/Giant_Panda.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.watch-online__content {
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.watch-online__text {
+    width: 465px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 75%;
+    text-align: center;
+    margin: 80px 120px;
+    z-index: 20;
+}
+
+.watch-online__text>strong {
+    color: #FFEE2E;
+}
+
+.watch-online__circle {
+    content: '';
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    position: absolute;
+    top: 90px;
+}
+
+.watch-online__button {
+    position: relative;
+    left: 200px;
+
+}
+
+.btn_1 {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* BACKSTAGE BLOCK */
+
+.backstage {
+    display: flex;
+    position: relative;
+}
+
+.backstage__content {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.backstage__section-picture {
+    position: absolute;
+    right: 0;
+    top: -80px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.backstage__content__text {
+    margin: 0 0 0 90px;
+}
+
+.backstage__content__text>h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+.backstage__content__text>h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: #333B41;
+}
+
+.backstage__content__text>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #333B41;
+}
