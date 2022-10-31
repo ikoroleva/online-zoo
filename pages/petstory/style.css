@@ -67,9 +67,29 @@ body {
 }
 
 .list__item a {
-    color: #fff;
     padding: 0 30px;
     text-decoration: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    color: #FFFFFF;
+}
+
+.list__item a:hover {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.active {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* WATCH ONLINE BLOCK */
@@ -137,6 +157,14 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
     border: none;
+}
+
+.btn_1:hover {
+    background: #E47209;
+}
+
+.btn_1:active {
+    background: #4B9200;
 }
 
 /* BACKSTAGE BLOCK */
@@ -221,6 +249,7 @@ body {
     margin: 10px;
 }
 
+
 .pet__card__pic {
     overflow: hidden;
     object-fit: contain;
@@ -269,6 +298,14 @@ body {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border: none;
     border-radius: 50%;
+}
+
+.pets__button__arrow:hover {
+    background: #E47209;
+}
+
+.pets__button__arrow:active {
+    background: #4B9200;
 }
 
 .pets__button {
@@ -380,6 +417,11 @@ body {
     justify-content: center;
     align-items: flex-start;
     margin: 66px 0 0 0;
+}
+
+.pick-and-feed__button>a {
+    text-decoration: none;
+    color: #fff;
 }
 
 /* TESTIMONIALS BLOCK */
@@ -551,6 +593,14 @@ body {
     color: #FFFFFF;
 }
 
+.btn_2:hover {
+    background: #E47209;
+}
+
+.btn_2:active {
+    background: #4B9200;
+}
+
 .testimonials__button {
     align-self: flex-start;
     margin: 40px 0;
@@ -612,11 +662,17 @@ footer {
 .send_btn {
     width: 129px;
     height: 42px;
+    background: #F1F3F2;
+    /* Green */
+
+    border: 1px solid #4B9200;
+    border-radius: 5px;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     /* or 22px */
-    color: #000000;
+    /* Green */
+    color: #4B9200;
 }
 
 .footer__links {
@@ -657,7 +713,6 @@ footer {
     z-index: 1;
 }
 
-.social-link>img {}
 
 .social-link>p {
     font-weight: 400;
