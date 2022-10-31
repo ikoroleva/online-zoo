@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online zoo</title>
+    <title>PetStory Online</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +18,22 @@
 
             <div class="header__logo">
                 <h1>PetStory Online</h1>
-                <img class="header__logo__img" src="..\..\assets\images\logo_footer.png" alt="logo">
+                <a href="#">
+                    <img class="header__logo__img" src="..\..\assets\images\logo_footer.png" alt="logo"></a>
             </div>
             <nav class="nav">
                 <ul class="nav list">
-                    <li class="nav list__item"><a href="#about">About</a></li>
-                    <li class="nav list__item"><a href="#map">Map</a></li>
-                    <li class="nav list__item"><a href="#zoos">Zoos</a></li>
-                    <li class="nav list__item"><a href="#donate">Donate</a></li>
-                    <li class="nav list__item"><a href="#contact">Contact</a></li>
+                    <li class="nav list__item active"><a href="#">About</a></li>
+                    <li class="nav list__item"><a href="#">Map</a></li>
+                    <li class="nav list__item"><a href="#">Zoos</a></li>
+                    <li class="nav list__item"><a href="#">Donate</a></li>
+                    <li class="nav list__item"><a href="#">Contact</a></li>
 
                 </ul>
             </nav>
-            <div class="header list__item desined-by-link"><a href="#designed">Designed by ©</a></div>
+            <div class="header list__item desined-by-link"><a
+                    href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by
+                    ©</a></div>
         </header>
 
         <main class="main-container">
@@ -161,7 +164,7 @@
                             PetStory.</strong></p>
                     <p>Even though the zoo has reopened, we need you now more than
                         ever
-                        to help us deal with these problems. Please consider a gift to our <a href="#">Emergency
+                        to help us deal with these problems. Please consider a gift to our <a href="#donate">Emergency
                             Support Fund</a>.</p>
                     <div class="how-it-works__container">
                         <h3>How it works</h3>
@@ -192,7 +195,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="pick-and-feed__button btn_1">Feed a friend now</button>
+                    <button class="pick-and-feed__button btn_1"><a href="#donate">Feed a friend now</a></button>
                 </div>
             </section>
 
@@ -368,7 +371,7 @@
                     </div>
                     <div class="subsribe-section">
                         <h3>Subscribe to our news</h3>
-                        <input type="text" placeholder="Enter your email">
+                        <input type="email" placeholder="Enter your email">
                         <button class="submit-subscription__button send_btn">Submit</button>
                     </div>
                 </div>
@@ -420,6 +423,7 @@
             </div>
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
