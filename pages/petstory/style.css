@@ -144,6 +144,7 @@ body {
 .backstage {
     display: flex;
     position: relative;
+    padding: 30px 0 80px;
 }
 
 .backstage__content {
@@ -155,7 +156,7 @@ body {
 .backstage__section-picture {
     position: absolute;
     right: 0;
-    top: -80px;
+    top: -60px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -182,4 +183,200 @@ body {
     font-size: 16px;
     line-height: 130%;
     color: #333B41;
+}
+
+/* PETS BLOCK */
+
+.pets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0 40px 0;
+    position: relative;
+}
+
+.pets__gallery {
+    width: 1320px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60px 1160px 60px;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.pets__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.pet__card {
+    width: 31%;
+    border: 1px solid #f9804b;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.pet__card__pic {
+    overflow: hidden;
+    object-fit: contain;
+}
+
+.pet__card__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pet__card__title {
+    margin: 16px;
+}
+
+.pet__card__title>h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    margin: 0;
+
+
+    text-transform: uppercase;
+}
+
+.pet__card__title>p {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    /* identical to box height, or 18px */
+    margin: 0;
+
+}
+
+.pet__card__description>img {
+    width: 33px;
+    height: 37px;
+    margin: 16px;
+}
+
+.pets__button__arrow {
+    width: 62px;
+    height: 62px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border: none;
+    border-radius: 50%;
+}
+
+.pets__button {
+    margin: 60px;
+}
+
+.pets__section__picture_left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.pets__section__picture_right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+/*  PICK AND FEED A FRIEND BLOCK */
+
+.pick-and-feed {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+    padding: 70px 0;
+}
+
+
+.pick-and-feed__container {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    width: 1160px;
+    margin: 0 auto;
+    padding: 60px 100px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pick-and-feed__container>h2 {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 120%;
+    /* identical to box height, or 58px */
+    text-align: center;
+    color: #FE9013;
+    margin: 0;
+}
+
+.pick-and-feed__container>h4 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+    color: #333B41;
+    margin: 40px 0;
+    align-self: flex-start;
+}
+
+.pick-and-feed__container>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+    color: #333B41;
+    margin: 5px 0;
+}
+
+.pick-and-feed__container>p>a {
+    color: #333B41;
+    text-decoration-color: #FE9013;
+}
+
+.how-it-works__container>h3 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 130%;
+    /* identical to box height, or 47px */
+    color: #333B41;
+    text-align: center;
+}
+
+.how-it-works__steps {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr 2fr;
+    column-gap: 30px;
+    margin: 40px 100px 60px;
+}
+
+.how-it-works__step {
+    display: flex;
+    flex-direction: column;
+}
+
+.how-it-works__step__pic {
+    width: 168px;
+    height: 168px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #F9804B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-it-works__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 66px 0 0 0;
 }
