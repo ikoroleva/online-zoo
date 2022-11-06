@@ -1,0 +1,45 @@
+.btn_1 {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+
+.btn_1:hover {
+    background: #E47209;
+}
+
+.btn_1:active {
+    background: #4B9200;
+}
+
+.btn_2 {
+    width: 298px;
+    height: 54px;
+    /* orange */
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 5px;
+    border: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.btn_2:hover {
+    background: #E47209;
+}
+
+.btn_2:active {
+    background: #4B9200;
+}
