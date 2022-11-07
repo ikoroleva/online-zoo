@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../../assets/styles/basic.css">
     <link rel="stylesheet" href="../../assets/styles/header.css">
     <link rel="stylesheet" href="../../assets/styles/footer.css">
@@ -31,7 +32,6 @@
                     <li class="nav list__item"><a href="#">Zoos</a></li>
                     <li class="nav list__item active"><a href="#">Donate</a></li>
                     <li class="nav list__item"><a href="#">Contact</a></li>
-
                 </ul>
             </nav>
             <div class="header list__item desined-by-link"><a
@@ -58,49 +58,79 @@
                         Donation Information
                     </h3>
                     <div class="donate-pick-and-feed">
-                        <div class="donate-pick-and-feed__container">
-                            <h2>Pick and feed a friend</h2>
-                            <p>
-                                We know the animals bring you joy, and in these extraordinary times,
-                                we're glad.
-                            </p>
-                            <div class="panda__container">
-                                <div class="panda-diet-count">
-                                    <p>4</p>
-                                    <p>Panda diet for the day.</p>
+                        <h2>Pick and feed a friend</h2>
+                        <p>
+                            We know the animals bring you joy, and in these extraordinary times,
+                            we're glad.
+                        </p>
+                        <div class="panda__container">
+                            <div class="panda-diet-count">
+                                <p class="panda-diet-count__num">4</p>
+                                <p class="panda-diet-count__text">Panda diet for the day.</p>
+                            </div>
+                            <div class="panda-x">
+                                <img src="..\..\assets\icons\x_icon.png" alt="multiply">
+                            </div>
+                            <div class="panda-widget">
+                                <img src="..\..\assets\images\animals-widget.png" alt="panda icon">
+                            </div>
+                        </div>
+                        <form class="amount-form">
+                            <p class="amount-form-description">Amount</p>
+                            <div class="radios">
+                                <div class="radios-line">
+                                    <div class="radio-input-container">
+                                        <input id="input5000" class="radiob" name="radio" type="radio" />
+                                        <label for="input5000" class="donation-sum">5000</label>
+                                    </div>
+                                    <div class="radio-input-container">
+                                        <input id="input2000" class="radiob" name="radio" type="radio" />
+                                        <label for="input2000" class="donation-sum">2000</label>
+                                    </div>
+                                    <div class="radio-input-container">
+                                        <input id="input1000" class="radiob" name="radio" type="radio" checked />
+                                        <label for="input1000" class="donation-sum">1000</label>
+                                    </div>
+                                    <div class="radio-input-container">
+                                        <input id="input500" class="radiob" name="radio" type="radio" />
+                                        <label for="input500" class="donation-sum">500</label>
+                                    </div>
+                                    <div class="radio-input-container">
+                                        <input id="input250" class="radiob" name="radio" type="radio" />
+                                        <label for="input250" class="donation-sum">250</label>
+                                    </div>
+                                    <div class="radio-input-container">
+                                        <input id="input100" class="radiob" name="radio" type="radio" />
+                                        <label for="input100" class="donation-sum">100</label>
+                                    </div>
+                                    <div class="radio-input-container">
+                                        <input id="input50" class="radiob" name="radio" type="radio" />
+                                        <label for="input50" class="donation-sum">50</label>
+                                    </div>
+                                    <div class="radio-input-container">
+                                        <input id="input25" class="radiob" name="radio" type="radio" />
+                                        <label for="input25" class="donation-sum">25</label>
+                                    </div>
                                 </div>
-                                <div class="panda-x">
-                                    <img src="..\..\assets\icons\x_icon.png" alt="multiply">
+
+                            </div>
+                            <div class="amount-input">
+                                <input type="number" placeholder="Another amount">
+                                <img src="..\..\assets\icons\dollar.png" alt="dollar icon">
+                            </div>
+                            <div class="period-container">
+                                <div class="period">
+                                    <input class="period-value" name="period" type="radio" value="monthly">
+                                    <label for="period">Monthly</label>
                                 </div>
-                                <div class="panda-widget">
-                                    <img src="..\..\assets\images\animals-widget.png" alt="panda icon">
+                                <div class="period">
+                                    <input class="period-value" name="period" type="radio" value="once" checked>
+                                    <label for="period">Once</label>
                                 </div>
                             </div>
-                            <form class="radios-form">
-                                <p class="radios-description">Amount</p>
-                                <div class="radios-line"></div>
-                                <div class="radios">
-                                    <input id="input5000" class="radiob" name="radio" type="radio" />
-                                    <label for="input5000">5000</label>
-                                    <input id="input2000" class="radiob" name="radio" type="radio" />
-                                    <label for="input2000">2000</label>
-                                    <input id="input1000" class="radiob" name="radio" type="radio" />
-                                    <label for="input1000">1000</label>
-                                    <input id="input500" class="radiob" name="radio" type="radio" />
-                                    <label for="input500">500</label>
-                                    <input id="input250" class="radiob" name="radio" type="radio" />
-                                    <label for="input250">250</label>
-                                    <input id="input100" class="radiob" name="radio" type="radio" />
-                                    <label for="input100">100</label>
-                                    <input id="input50" class="radiob" name="radio" type="radio" />
-                                    <label for="input50">50</label>
-                                    <input id="input25" class="radiob" name="radio" type="radio" />
-                                    <label for="input25">25</label>
-                                    <span id="slider"></span>
-                                </div>
-                            </form>
-                        </div>
+                            <input type="submit" value="Feed a friend now" class="btn_1">
                     </div>
+                    </form>
                 </div>
             </section>
         </main>
