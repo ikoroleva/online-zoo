@@ -79,7 +79,9 @@
                     </div>
                     <div class="pets__cards">
                         <div class="pet__card">
-                            <img class="pet__card__pic" src="..\..\assets\images\pandas.png" alt="cute pandas">
+                            <div class="pet__card__pic">
+                                <img src="..\..\assets\images\pandas.png" alt="cute pandas">
+                            </div>
                             <div class="pet__card__description">
                                 <div class="pet__card__title">
                                     <h3>Giant Pandas</h3>
@@ -91,7 +93,9 @@
 
                         </div>
                         <div class="pet__card">
-                            <img class="pet__card__pic" src="..\..\assets\images\eagle.png" alt="strong eagle">
+                            <div class="pet__card__pic">
+                                <img src="..\..\assets\images\eagle.png" alt="strong eagle">
+                            </div>
                             <div class="pet__card__description">
                                 <div class="pet__card__title">
                                     <h3>Eagles</h3>
@@ -102,7 +106,9 @@
                             </div>
                         </div>
                         <div class="pet__card">
-                            <img class="pet__card__pic" src="..\..\assets\images\gorilla.png" alt="friendly gorilla">
+                            <div class="pet__card__pic">
+                                <img src="..\..\assets\images\gorilla.png" alt="friendly gorilla">
+                            </div>
                             <div class="pet__card__description">
                                 <div class="pet__card__title">
                                     <h3>Gorillas</h3>
@@ -113,7 +119,9 @@
                             </div>
                         </div>
                         <div class="pet__card">
-                            <img class="pet__card__pic" src="..\..\assets\images\sloth.png" alt="charming sloth">
+                            <div class="pet__card__pic">
+                                <img src="..\..\assets\images\sloth.png" alt="charming sloth">
+                            </div>
                             <div class="pet__card__description">
                                 <div class="pet__card__title">
                                     <h3>Two-toed Sloth</h3>
@@ -124,8 +132,9 @@
                             </div>
                         </div>
                         <div class="pet__card">
-                            <img class="pet__card__pic" src="..\..\assets\images\cheetah.png"
-                                alt="mother cheetah with cub">
+                            <div class="pet__card__pic">
+                                <img src="..\..\assets\images\cheetah.png" alt="mother cheetah with cub">
+                            </div>
                             <div class="pet__card__description">
                                 <div class="pet__card__title">
                                     <h3>Cheetahs</h3>
@@ -136,7 +145,9 @@
                             </div>
                         </div>
                         <div class="pet__card">
-                            <img class="pet__card__pic" src="..\..\assets\images\pinguin.png" alt="funny penguin">
+                            <div class="pet__card__pic">
+                                <img src="..\..\assets\images\pinguin.png" alt="funny penguin">
+                            </div>
                             <div class="pet__card__description">
                                 <div class="pet__card__title">
                                     <h3>Penguins</h3>
@@ -358,9 +369,9 @@
                         </div>
                     </div>
                     <div class="testimonials__line__scroll__container">
-                        <div class="testimonials__line__scroll">
-                            <div class="testimonials__line__scroll__pointer"></div>
-                        </div>
+                        <!-- <div class="testimonils__line__scroll"> -->
+                        <input type="range" min="0" max="100" value="0">
+                        <!-- </div> -->
                     </div>
                     <button class="testimonials__button btn_2">leave feedback</button>
                 </div>
@@ -373,43 +384,39 @@
                     <div>
                         <img class="footer__logo" src="..\..\assets\images\logo_footer.png" alt="logo">
                     </div>
-                    <div class="subsribe-section">
+                    <form class="subsribe-section">
                         <h3>Subscribe to our news</h3>
                         <input type="email" placeholder="Enter your email" required>
-                        <button type="submit" class="submit-subscription__button send_btn">Submit</button>
-                    </div>
+                        <button type="submit" class="send_btn">Submit</button>
+                    </form>
                 </div>
                 <button class="footer__button btn_2">Donate for volunteers</button>
                 <div class="footer__links">
                     <div class="social-links">
-                        <div class="social-link">
-                            <div class="social-link__img">
+                        <a class="social-link" href="https://www.facebook.com/">
+                            <div class="social-link__circle">
                                 <img src="..\..\assets\icons\facebook.png" alt="facebook">
-                                <div class="social-link__circle"></div>
                             </div>
-                            <a href="https://www.facebook.com/">Facebook</a>
-                        </div>
-                        <div class="social-link">
-                            <div class="social-link__img">
+                            <p>Facebook</p>
+                        </a>
+                        <a class="social-link" href="https://twitter.com/">
+                            <div class="social-link__circle">
                                 <img src="..\..\assets\icons\twitter.png" alt="twitter">
-                                <div class="social-link__circle"></div>
                             </div>
-                            <a href="https://twitter.com/">Twitter</a>
-                        </div>
-                        <div class="social-link">
-                            <div class="social-link__img">
+                            <p>Twitter</p>
+                        </a>
+                        <a class="social-link" href="https://www.instagram.com/">
+                            <div class="social-link__circle">
                                 <img src="..\..\assets\icons\instagram.png" alt="instagram">
-                                <div class="social-link__circle"></div>
                             </div>
-                            <a href="https://www.instagram.com/">Instagram</a>
-                        </div>
-                        <div class="social-link">
-                            <div class="social-link__img">
+                            <p>Instagram</p>
+                        </a>
+                        <a class="social-link" href="https://www.youtube.com/">
+                            <div class="social-link__circle">
                                 <img src="..\..\assets\icons\youtube.png" alt="youtube">
-                                <div class="social-link__circle"></div>
                             </div>
-                            <a href="https://www.youtube.com/">YouTube</a>
-                        </div>
+                            <p>YouTube</p>
+                        </a>
                     </div>
                     <nav class="nav">
                         <ul class="nav list">
