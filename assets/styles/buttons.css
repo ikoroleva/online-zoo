@@ -43,3 +43,23 @@
 .btn_2:active {
     background: #4B9200;
 }
+
+.send_btn {
+    width: 129px;
+    height: 42px;
+    background: #F1F3F2;
+    /* black_blue */
+    border: 1px solid #333B41;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+    color: #000000;
+    /* or 22px */
+}
+
+.send_btn:active {
+    border-color: #4B9200;
+    color: #4B9200;
+}

@@ -2,7 +2,7 @@
 
 footer {
     background: #111115;
-    padding: 80px 0;
+    padding: 42px 0;
 }
 
 .footer__container {
@@ -28,7 +28,7 @@ footer {
     line-height: 120%;
     /* identical to box height, or 29px */
     color: #FFFFFF;
-    margin: 0 0 20px 0;
+    margin: 0 0 14px 0;
 }
 
 .subsribe-section>input {
@@ -43,6 +43,8 @@ footer {
     /* or 22px */
     /* Gray 4 */
     color: #BDBDBD;
+    margin: 0 7px 36px 0;
+    padding: 7px;
 }
 
 .subsribe-section>input:focus {
@@ -51,24 +53,11 @@ footer {
     outline: none;
 }
 
-.send_btn {
-    width: 129px;
-    height: 42px;
-    background: #F1F3F2;
-    /* black_blue */
-    border: 1px solid #333B41;
-    border-radius: 5px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    /* or 22px */
-    color: #000000;
-    /* or 22px */
-}
+.footer__donate__btn>a {
 
-.send_btn:active {
-    border-color: #4B9200;
-    color: #4B9200;
+    text-decoration: none;
+    color: #fff;
+
 }
 
 
@@ -76,7 +65,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: 60px;
+    margin-top: 33px;
 }
 
 .social-links {
@@ -87,7 +76,7 @@ footer {
 
 .social-link {
     display: flex;
-    margin: 10px 0;
+    margin: 5px 0;
     align-items: center;
     color: #FFFFFF;
     text-decoration: none;
@@ -119,8 +108,8 @@ footer {
     line-height: 140%;
     /* or 22px */
     color: #FFFFFF;
-    margin: 3px;
-    padding: 0 15px;
+    margin: 0px;
+    padding: 5px 9px 0 11px
 }
 
 
@@ -143,4 +132,5 @@ footer {
     line-height: 130%;
     /* identical to box height, or 21px */
     color: rgba(255, 255, 255, 1);
+    margin: 8px 0px;
 }

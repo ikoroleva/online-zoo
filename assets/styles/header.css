@@ -5,7 +5,7 @@
     height: 80px;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    column-gap: 30px;
+    column-gap: 32px;
     z-index: 1;
 
 }
@@ -16,17 +16,25 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-top: 14px;
+    margin-left: 0;
 
 }
 
 .header__logo>h1 {
-    visibility: hidden;
+    display: none;
+}
+
+.header__logo>a {
+    margin-top: -5px;
+    margin-right: 5px;
 }
 
 .desined-by-link {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-left: -44px;
 
 }
 
@@ -39,10 +47,11 @@
     justify-content: flex-start;
     align-items: center;
     padding: 0;
+    margin: 6px;
 }
 
 .list__item a {
-    padding: 0 30px;
+    padding: 2px 33px 0px 25px;
     text-decoration: 0;
     font-weight: 500;
     font-size: 16px;
