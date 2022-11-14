@@ -182,23 +182,62 @@
     margin-top: 25px;
 }
 
+.radiob,
+.donation-sum {
+    cursor: pointer;
+}
+
 .radiob {
     margin: 0;
     padding: 0;
-    all: unset;
     width: 10px;
     height: 10px;
     border: solid 1px rgb(255, 238, 46);
     border-radius: 50%;
-    background-color: rgb(255, 238, 46);
-    cursor: pointer;
+    background-color: #ffee2e;
+    position: relative;
+    appearance: none;
     /* transform: translateY(-0.075em); */
 }
 
-.radiob:checked {
-    outline: 10px double #FE9013;
-    outline-offset: 5px;
+.radiob::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: -16px;
+    left: -16px;
 }
+
+.radiob::after {
+    content: '';
+    width: 22.95px;
+    height: 22.95px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: -8px;
+    left: -7px;
+
+}
+
+/* .radiob:checked {
+    outline: 10px double #FE9013;
+    outline-offset: 0;
+} */
+
+
+.radiob:checked::before {
+    border: 2px solid #FE9013;
+}
+
+.radiob:checked::after {
+    border: 2px solid #FE9013;
+}
+
+
 
 .donation-sum::before {
     content: url(../../assets/icons/dollar.png);
