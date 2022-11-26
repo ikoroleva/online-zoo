@@ -26,16 +26,16 @@
                     <img class="header__logo__img" src="..\..\assets\images\logo_footer.png" alt="logo"></a>
             </div>
             <nav class="nav">
-                <ul class="nav list">
-                    <li class="nav list__item active"><a href="#">About</a></li>
-                    <li class="nav list__item"><a href="#">Map</a></li>
-                    <li class="nav list__item"><a href="#">Zoos</a></li>
-                    <li class="nav list__item"><a href="../donate/index.html">Donate</a></li>
-                    <li class="nav list__item"><a href="#">Contact us</a></li>
+                <ul class="list">
+                    <li class="list__item active"><a href="#">About</a></li>
+                    <li class="list__item"><a href="#">Map</a></li>
+                    <li class="list__item"><a href="#">Zoos</a></li>
+                    <li class="list__item"><a href="../donate/index.html">Donate</a></li>
+                    <li class="list__item"><a href="#">Contact us</a></li>
 
                 </ul>
             </nav>
-            <div class="header list__item desined-by-link"><a
+            <div class="list__item desined-by-link"><a
                     href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by
                     ©</a></div>
         </header>
@@ -53,8 +53,9 @@
             <!-- BACKSTAGE BLOCK-->
             <section class="backstage">
                 <div class="backstage__content">
-                    <img class="backstage__content__picture" src="..\..\assets\images\bamboo-cap.png"
-                        alt="man in a bamboo-cap">
+                    <div class="backstage__content__picture">
+                        <img src="..\..\assets\images\bamboo-cap.png" alt="man in a bamboo-cap">
+                    </div>
                     <div class="backstage__content__text">
                         <h2>The Backstage of the Wilderness World.</h2>
                         <p>The site was founded on the basis of a volunteer movement to protect and care for animals.
@@ -73,12 +74,12 @@
             <!-- PETS BLOCK-->
             <section class="pets">
                 <div class="pets__gallery">
-                    <div class="pets__gallery__nav">
+                    <div class="pets__gallery__nav left">
                         <button class="pets__button__arrow arrow_left"><img src="..\..\assets\icons\arrow-left.png"
                                 alt="arrow left"></button>
                     </div>
                     <div class="pets__cards">
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-panda">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\pandas.png" alt="cute pandas">
                             </div>
@@ -92,7 +93,7 @@
                             </div>
 
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-eagle">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\eagle.png" alt="strong eagle">
                             </div>
@@ -105,7 +106,7 @@
                                     alt="meat based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-gorilla">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\gorilla.png" alt="friendly gorilla">
                             </div>
@@ -118,7 +119,7 @@
                                     alt="plant based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-sloth">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\sloth.png" alt="charming sloth">
                             </div>
@@ -131,7 +132,7 @@
                                     alt="plant based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-cheetah">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\cheetah.png" alt="mother cheetah with cub">
                             </div>
@@ -144,7 +145,7 @@
                                     alt="meat based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-pinguin">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\pinguin.png" alt="funny penguin">
                             </div>
@@ -158,8 +159,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pets__gallery__nav">
-                        <button class="pets__button__arrow aarrow_right"><img src="..\..\assets\icons\arrow-right.png"
+                    <div class="pets__gallery__nav right">
+                        <button class="pets__button__arrow arrow_right"><img src="..\..\assets\icons\arrow-right.png"
                                 alt="arrow right"></button>
                     </div>
                 </div>
