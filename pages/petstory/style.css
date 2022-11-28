@@ -110,6 +110,49 @@
     }
 }
 
+@media (max-width: 640px) {
+    .watch-online {
+        height: 373px;
+        bottom: 0;
+    }
+
+
+    .watch-online__content {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+
+    .watch-online__circle {
+        width: 237.6px;
+        height: 237.6px;
+        top: 3rem;
+        right: 4.5rem
+    }
+
+    .watch-online__text {
+        width: 255px;
+        display: flex;
+        flex-direction: column;
+        font-size: 54.29px;
+        margin: 0 1rem 5.5rem 0;
+        order: 1;
+    }
+
+    .watch-online__text>strong {
+        margin: 0;
+    }
+
+    .watch-online__button {
+        position: relative;
+        bottom: 2.5rem;
+        left: 1.4rem;
+    }
+}
+
 /* BACKSTAGE BLOCK */
 
 .backstage {
