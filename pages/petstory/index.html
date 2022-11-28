@@ -23,19 +23,23 @@
             <div class="header__logo">
                 <h1>PetStory Online</h1>
                 <a href="#">
-                    <img class="header__logo__img" src="..\..\assets\images\logo_footer.png" alt="logo"></a>
+                    <img class="header__logo__img" src="../../assets/images/logo.png" alt="logo">
+                    <img class="header__logo__img_640" src="../../assets/images/logo_640.png" alt="logo"></a>
             </div>
             <nav class="nav">
-                <ul class="nav list">
-                    <li class="nav list__item active"><a href="#">About</a></li>
-                    <li class="nav list__item"><a href="#">Map</a></li>
-                    <li class="nav list__item"><a href="#">Zoos</a></li>
-                    <li class="nav list__item"><a href="../donate/index.html">Donate</a></li>
-                    <li class="nav list__item"><a href="#">Contact us</a></li>
+                <div class="burger-menu">
+                    <img src="../../assets/icons/burger_menu.png" alt="burger menu icon">
+                </div>
+                <ul class="list">
+                    <li class="list__item active"><a href="#">About</a></li>
+                    <li class="list__item"><a href="#">Map</a></li>
+                    <li class="list__item"><a href="#">Zoos</a></li>
+                    <li class="list__item"><a href="../donate/index.html">Donate</a></li>
+                    <li class="list__item"><a href="#">Contact us</a></li>
 
                 </ul>
             </nav>
-            <div class="header list__item desined-by-link"><a
+            <div class="list__item desined-by-link"><a
                     href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online?node-id=0%3A1">Designed by
                     ©</a></div>
         </header>
@@ -53,8 +57,9 @@
             <!-- BACKSTAGE BLOCK-->
             <section class="backstage">
                 <div class="backstage__content">
-                    <img class="backstage__content__picture" src="..\..\assets\images\bamboo-cap.png"
-                        alt="man in a bamboo-cap">
+                    <div class="backstage__content__picture">
+                        <img src="..\..\assets\images\bamboo-cap.png" alt="man in a bamboo-cap">
+                    </div>
                     <div class="backstage__content__text">
                         <h2>The Backstage of the Wilderness World.</h2>
                         <p>The site was founded on the basis of a volunteer movement to protect and care for animals.
@@ -68,17 +73,19 @@
                             These have a total of more than 1,500 mammals and reptiles.</p>
                     </div>
                 </div>
-                <img class="backstage__section-picture" src="..\..\assets\images\flower_foto1.png" alt="flowers">
+                <div class="backstage__section-picture">
+                    <!-- <img class="backstage__section-picture" src="..\..\assets\images\flower_foto1.png" alt="flowers"> -->
+                </div>
             </section>
             <!-- PETS BLOCK-->
             <section class="pets">
                 <div class="pets__gallery">
-                    <div class="pets__gallery__nav">
+                    <div class="pets__gallery__nav left">
                         <button class="pets__button__arrow arrow_left"><img src="..\..\assets\icons\arrow-left.png"
                                 alt="arrow left"></button>
                     </div>
                     <div class="pets__cards">
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-panda">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\pandas.png" alt="cute pandas">
                             </div>
@@ -92,7 +99,7 @@
                             </div>
 
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-eagle">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\eagle.png" alt="strong eagle">
                             </div>
@@ -105,7 +112,7 @@
                                     alt="meat based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-gorilla">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\gorilla.png" alt="friendly gorilla">
                             </div>
@@ -118,7 +125,7 @@
                                     alt="plant based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-sloth">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\sloth.png" alt="charming sloth">
                             </div>
@@ -131,7 +138,7 @@
                                     alt="plant based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-cheetah">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\cheetah.png" alt="mother cheetah with cub">
                             </div>
@@ -144,7 +151,7 @@
                                     alt="meat based diet icon">
                             </div>
                         </div>
-                        <div class="pet__card">
+                        <div class="pet__card" id="card-pinguin">
                             <div class="pet__card__pic">
                                 <img src="..\..\assets\images\pinguin.png" alt="funny penguin">
                             </div>
@@ -158,14 +165,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="pets__gallery__nav">
-                        <button class="pets__button__arrow aarrow_right"><img src="..\..\assets\icons\arrow-right.png"
+                    <div class="pets__gallery__nav right">
+                        <button class="pets__button__arrow arrow_right"><img src="..\..\assets\icons\arrow-right.png"
                                 alt="arrow right"></button>
                     </div>
                 </div>
                 <button class="pets__button btn_1">Choose your favorite</button>
-                <img class="pets__section__picture_left" src="..\..\assets\images\palm_foto.png" alt="palm">
-                <img class="pets__section__picture_right" src="..\..\assets\images\strelitzia_1.png" alt="strelitzia">
+                <div class="pets__section__picture_left"></div>
+                <div class="pets__section__picture_left_big"></div>
+                <div class="pets__section__picture_right"></div>
+                <div class="pets__section__picture_right_big"></div>
             </section>
 
             <!-- PICK AND FEED A FRIEND BLOCK-->
@@ -221,7 +230,7 @@
                     <h2 class="testimonials__section-header">Testimonials</h2>
                     <div class="testimonials__cards">
                         <div class="testimonials__card__container">
-                            <div class="testimonials__card">
+                            <div class="testimonials__card" id="person-michael">
                                 <div class="testimonials__card-header">
                                     <img src="..\..\assets\images\user1_avatar.png" alt="user 1 avatar">
                                     <div class="testimonials__card-header__text">
@@ -259,7 +268,7 @@
                             </div>
                         </div>
                         <div class="testimonials__card__container">
-                            <div class="testimonials__card">
+                            <div class="testimonials__card" id="person-oskar">
                                 <div class="testimonials__card-header">
                                     <img src="..\..\assets\images\user2_avatar.png" alt="user 2 avatar">
                                     <div class="testimonials__card-header__text">
@@ -296,7 +305,7 @@
                             </div>
                         </div>
                         <div class="testimonials__card__container">
-                            <div class="testimonials__card">
+                            <div class="testimonials__card" id="person-fredericka">
                                 <div class="testimonials__card-header">
                                     <img src="..\..\assets\images\user3_avatar.png" alt="user 3 avatar">
                                     <div class="testimonials__card-header__text">
@@ -329,8 +338,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="testimonials__card__container">
-                            <div class="testimonials__card">
+                        <div class="testimonials__card__container" id="person-mila-cont">
+                            <div class="testimonials__card" id="person-mila">
                                 <div class="testimonials__card-header">
                                     <img src="..\..\assets\images\user4_avatar.png" alt="user 4 avatar">
                                     <div class="testimonials__card-header__text">
@@ -383,7 +392,7 @@
             <div class="footer__container">
                 <div class="footer__logo-and-subscribtion">
                     <div><a href="#">
-                            <img class="footer__logo" src="..\..\assets\images\logo_footer.png" alt="logo"></a>
+                            <img class="footer__logo" src="..\..\assets\images\logo.png" alt="logo"></a>
                     </div>
                     <form class="subsribe-section">
                         <h3>Subscribe to our news</h3>
@@ -420,12 +429,12 @@
                             <p>YouTube</p>
                         </a>
                     </div>
-                    <nav class="nav">
-                        <ul class="nav list">
-                            <li class="nav list__item active"><a href="#">About</a></li>
-                            <li class="nav list__item"><a href="#">Map</a></li>
-                            <li class="nav list__item"><a href="#">Zoos</a></li>
-                            <li class="nav list__item"><a href="#">Contact us</a></li>
+                    <nav class="footer_nav">
+                        <ul class="footer_list">
+                            <li class="footer_list__item active"><a href="#">About</a></li>
+                            <li class="footer_list__item"><a href="#">Map</a></li>
+                            <li class="footer_list__item"><a href="#">Zoos</a></li>
+                            <li class="footer_list__item"><a href="#">Contact us</a></li>
                         </ul>
                     </nav>
                     <div class="copyright">
