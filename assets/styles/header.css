@@ -6,13 +6,14 @@
     z-index: 1;
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
 
 }
 
 .header__logo {
     display: flex;
-    justify-content: center;
+    width: 19%;
+    justify-content: flex-end;
     align-items: center;
 
 }
@@ -43,7 +44,7 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    padding: 0px 30px;
+    padding: 0 2rem;
     margin: 0;
 }
 
@@ -84,7 +85,8 @@
 
 @media (max-width: 1000px) {
     .header {
-        padding: 16px 30px;
+        padding: 1rem 2rem;
+        justify-content: space-between;
     }
 
     .header__logo {
@@ -92,11 +94,12 @@
     }
 
     .list {
-        padding: 0px 37px;
+        padding: 0 1rem;
     }
 
+
     .list li {
-        padding: 0px 24px;
+        padding: 0px 1.5rem;
     }
 
     .header__logo a img {
@@ -104,8 +107,7 @@
     }
 
     .nav {
-        display: flex;
-        width: 80%;
+        width: 76%;
     }
 
     .desined-by-link {

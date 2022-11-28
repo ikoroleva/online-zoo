@@ -23,9 +23,9 @@ body {
     flex-direction: column;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1599px) {
     .container-centered {
         width: 100%;
-        margin: 0;
+        margin: 0 auto;
     }
 }
