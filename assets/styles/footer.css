@@ -22,6 +22,10 @@ footer {
 
 }
 
+.footer__logo__320 {
+    display: none;
+}
+
 .subsribe-section>h3 {
     font-weight: 400;
     font-size: 24px;
@@ -197,7 +201,21 @@ footer {
 
 }
 
-@media (max-width:640px) {
+@media (max-width:800px) {
+    .footer_list {
+        justify-content: flex-start;
+    }
+
+    .footer_list {
+        padding-right: 1rem;
+    }
+
+    .footer_list li {
+        padding: 0px 1rem;
+    }
+}
+
+@media (max-width:730px) {
     footer {
         padding: 0.7rem 0;
     }
@@ -248,5 +266,61 @@ footer {
 
     .social-link>p {
         display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer__container {
+        margin: 12px auto;
+    }
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__logo__320 {
+        display: block;
+    }
+
+    .footer__logo-and-subscribtion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__donate__btn {
+        margin-top: 5.4rem;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 22px;
+    }
+
+    .social-links {
+        position: absolute;
+        bottom: 13.2rem;
+        display: flex;
+        flex-direction: row;
+        width: 74%;
+        right: 40px;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
+    .footer_nav {
+        width: 100%;
+        order: 1;
+        justify-content: center;
+    }
+
+    .copyright {
+        align-self: end;
+        margin: 0 0 15px;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 120%;
     }
 }
