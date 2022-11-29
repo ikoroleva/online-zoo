@@ -857,6 +857,14 @@
     margin: 0 auto 6rem;
 }
 
+.how-it-works__arrow>.small_arrow {
+    display: none;
+}
+
+.how-it-works__arrow>.big_arrow {
+    display: block;
+}
+
 /* .pick-and-feed__button {
     margin-right: 3rem;
 } */
@@ -906,6 +914,61 @@
 
     .how-it-works__steps {
         margin: 5% auto 8%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .pick-and-feed {
+        padding: 1.3rem 0 0.3rem;
+    }
+
+    .pick-and-feed__container {
+        width: 100%;
+        margin: 0 auto 1.2rem;
+        padding: 0 0 4rem 0;
+    }
+
+    .pick-and-feed__container>h2 {
+        font-size: 42px;
+        line-height: 150%;
+        margin: 0;
+    }
+
+    .pick-and-feed__container>h4 {
+        margin: 0.9rem 0 1.4rem 1.1rem;
+    }
+
+    .pick-and-feed__container>p {
+        margin: 0.2rem 1rem 0.3rem 1.4rem;
+    }
+
+    .how-it-works__container {
+        width: 94%;
+    }
+
+    .how-it-works__container>h3 {
+        margin: 1.5rem 0 0 0;
+    }
+
+    .how-it-works__steps {
+        margin: 3% auto 5%;
+
+    }
+
+    .how-it-works__arrow {
+        width: 37px;
+        align-items: flex-start;
+        margin: -16px 0;
+        z-index: 1;
+    }
+
+    .how-it-works__arrow>.big_arrow {
+        display: none;
+    }
+
+    .how-it-works__arrow>.small_arrow {
+        display: block;
     }
 }
 
@@ -1144,5 +1207,48 @@ input[type='range']::-webkit-slider-thumb {
 
     .testimonials__section-picture {
         height: 21.5rem;
+    }
+}
+
+@media(max-width:640px) {
+    .testimonials {
+        padding: 2.7rem 0 3rem;
+    }
+
+    .testimonials__card__container {
+        margin: 0.5rem;
+        height: 113px;
+        overflow: hidden;
+    }
+
+    .testimonials__section-header {
+        margin: 0.7rem 0 0.5rem;
+    }
+
+    .testimonials__card {
+        padding: 0.4rem;
+    }
+
+    .testimonials__card-text {
+        margin: 5px 0;
+    }
+
+    .testimonials__cards {
+        flex-direction: column;
+    }
+
+    .testimonials__line__scroll__container {
+        display: none;
+    }
+
+    .testimonials__button {
+        margin: 2rem 1rem;
+        align-self: center;
+    }
+
+    .testimonials__section-picture {
+        height: 12.5rem;
+        width: 20%;
+        bottom: -60px;
     }
 }
