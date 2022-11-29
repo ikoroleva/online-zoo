@@ -196,3 +196,57 @@ footer {
 
 
 }
+
+@media (max-width:640px) {
+    footer {
+        padding: 0.7rem 0;
+    }
+
+    .footer__container {
+        width: 94%;
+        position: relative;
+    }
+
+    .footer_list {
+        padding: 0;
+    }
+
+    .footer_list li {
+        padding: 6px 14px;
+        justify-content: flex-start;
+    }
+
+    .footer__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 61px;
+    }
+
+    .footer_nav {
+        width: 60%;
+        justify-content: flex-start;
+    }
+
+    .subsribe-section {
+        display: none;
+    }
+
+    .footer__donate__btn {
+        margin-top: 2rem;
+    }
+
+    .social-links {
+        position: absolute;
+        bottom: 92px;
+        right: 0;
+    }
+
+    .social-link {
+        margin: 10px 0;
+    }
+
+    .social-link>p {
+        display: none;
+    }
+}
