@@ -136,6 +136,34 @@
     }
 }
 
+@media (max-width: 800px) {
+    .watch-online__content {
+        width: 60%;
+    }
+
+    .watch-online__text {
+        width: 282px;
+        font-size: 76px;
+        margin: 68px 90px 40px;
+    }
+
+    .watch-online__circle {
+        width: 331px;
+        height: 331px;
+        top: 86px;
+    }
+}
+
+@media (max-width:700px) {
+    .watch-online {
+        height: 535px;
+    }
+
+    .watch-online__content {
+        width: 65%;
+    }
+}
+
 @media (max-width: 640px) {
     .watch-online {
         height: 373px;
@@ -178,6 +206,54 @@
         left: 1.4rem;
     }
 }
+
+@media (max-width: 320px) {
+    .watch-online {
+        height: 187px;
+        top: 33px;
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+
+    .watch-online__content {
+        width: 48%;
+        height: 100%;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+
+    .watch-online__circle {
+        width: 119.09px;
+        height: 119.09px;
+        top: 1.5rem;
+        right: 2.5rem;
+    }
+
+    .watch-online__text {
+        width: 128.13px;
+        font-size: 28px;
+        line-height: 21px;
+        margin: 0 1rem 2.5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .watch-online__text>strong {
+        margin: 0;
+    }
+
+    .watch-online__button {
+        position: absolute;
+        top: 13rem;
+        left: -9.6rem;
+    }
+}
+
 
 /* BACKSTAGE BLOCK */
 
@@ -320,6 +396,16 @@
     }
 }
 
+@media(max-width:800px) {
+    .backstage__content__text>h2 {
+        font-size: 2.5rem;
+    }
+
+    .backstage__content__text>h4 {
+        margin: 30px 0 30px 0;
+    }
+}
+
 @media (max-width: 640px) {
     .backstage__content__picture {
         display: none;
@@ -344,6 +430,37 @@
         background-size: cover;
         top: 0;
     }
+}
+
+@media(max-width: 320px) {
+    .backstage__content__text>h2 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        color: #333B41;
+    }
+
+    .backstage__content__text {
+        margin: 4.9rem 0.7rem 2rem 0.7rem;
+    }
+
+    .backstage__content__text>p {
+        margin: 9px 0 0;
+        line-height: 140%;
+    }
+
+    .backstage__content__text>h4 {
+        margin: 1rem 0 0 0;
+    }
+
+    .backstage__section-picture {
+        display: flex;
+        width: 10%;
+        height: 217px;
+        background-size: cover;
+        top: 13px;
+    }
+
 }
 
 /* PETS BLOCK */
@@ -751,6 +868,60 @@
         margin-top: 63px;
     }
 
+    .pets__section__picture_left {
+        width: 11rem;
+        height: 9rem;
+        background-size: contain;
+    }
+
+    .pets__section__picture_right {
+        width: 11rem;
+        height: 7rem;
+        background-size: contain;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .pets {
+        padding: 0.5rem 0 4rem;
+    }
+
+    .item.pets__gallery__nav.left {
+        display: none;
+    }
+
+    .item.pets__gallery__nav.right {
+        display: none;
+    }
+
+    .pets__gallery {
+        width: 89%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 19px;
+    }
+
+    .pets__button {
+        margin-top: 20px;
+    }
+
+    .pets__section__picture_right {
+        width: 85px;
+        height: 71px;
+        bottom: -8px;
+        background-size: contain;
+        right: 0;
+    }
+
+    .pets__section__picture_left {
+        left: 0;
+        bottom: 0;
+        height: 71px;
+        width: 85px;
+        background-size: contain;
+    }
 }
 
 /*  PICK AND FEED A FRIEND BLOCK */
@@ -917,6 +1088,12 @@
     }
 }
 
+@media (max-width:700px) {
+    .pick-and-feed__container {
+        width: 100%;
+    }
+}
+
 @media (max-width: 640px) {
 
     .pick-and-feed {
@@ -970,6 +1147,71 @@
     .how-it-works__arrow>.small_arrow {
         display: block;
     }
+}
+
+@media (max-width: 500px) {
+    .pick-and-feed {
+        padding: 1rem 0 0.3rem;
+    }
+
+    .pick-and-feed__container {
+        width: 94%;
+        margin: 0 auto 1.2rem;
+        padding: 0 0 2.7rem 0;
+    }
+
+    .pick-and-feed__container>h2 {
+        font-size: 24px;
+        line-height: 120%;
+        margin: 20px 0 0;
+    }
+
+    .pick-and-feed__container>h4 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+        color: #333B41;
+        margin: 0.7rem 0 0.4rem 0;
+    }
+
+    .pick-and-feed__container>p {
+        display: none;
+    }
+
+    .how-it-works__container {
+        width: 94%;
+    }
+
+    .how-it-works__container>h3 {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        margin: 1rem 0 0 0;
+    }
+
+    .how-it-works__steps {
+        margin: 6% auto 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-it-works__arrow {
+        width: 42px;
+        transform: rotate(90deg);
+        align-items: flex-end;
+        margin: 0;
+        z-index: 1;
+        position: relative;
+        bottom: 24px;
+        left: 100px;
+    }
+
+    .how-it-works__step>p {
+        margin-top: 0.7rem;
+        align-self: flex-start;
+    }
+
 }
 
 /* TESTIMONIALS BLOCK */
@@ -1210,6 +1452,12 @@ input[type='range']::-webkit-slider-thumb {
     }
 }
 
+@media (max-width: 800px) {
+    .testimonials__card__container {
+        margin: 0.5rem;
+    }
+}
+
 @media(max-width:640px) {
     .testimonials {
         padding: 2.7rem 0 3rem;
@@ -1244,11 +1492,46 @@ input[type='range']::-webkit-slider-thumb {
     .testimonials__button {
         margin: 2rem 1rem;
         align-self: center;
+        width: 80%;
     }
 
     .testimonials__section-picture {
         height: 12.5rem;
         width: 20%;
         bottom: -60px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .testimonials {
+        padding: 0.7rem 0 2.6rem;
+    }
+
+    .testimonials__section-header {
+        margin: 1rem 0 0.5rem;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 120%;
+        text-align: center;
+        color: #333B41;
+    }
+
+    .testimonials__card__container {
+        margin: 0.4rem;
+        height: 113px;
+        overflow: hidden;
+    }
+
+    .testimonials__button {
+        margin: 1.2rem 1rem;
+        align-self: center;
+        max-width: 77%;
+    }
+
+    .testimonials__section-picture {
+        height: 95px;
+        width: 63px;
+        bottom: -26px;
     }
 }

@@ -123,6 +123,39 @@
     }
 }
 
+@media(max-width:800px) {
+    .header {
+        padding: 1rem 2rem;
+        justify-content: flex-start;
+    }
+
+    .nav {
+        width: 64%;
+    }
+
+    .list {
+        padding: 0 1rem;
+    }
+
+    .list li {
+        padding: 0 0.7rem;
+    }
+
+    .desined-by-link {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width:700px) {
+    .desined-by-link {
+        display: none;
+    }
+
+    .nav {
+        width: 80%;
+    }
+}
+
 @media (max-width: 640px) {
     .header {
         height: 34px;
