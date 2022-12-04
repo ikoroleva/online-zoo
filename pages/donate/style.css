@@ -3,6 +3,8 @@
     background-image: url("../../assets/images/panda_bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
 }
 
 .donate {
@@ -44,6 +46,7 @@
     color: #FE9013;
     margin: 30px 0 60px 0;
 }
+
 
 .donate-pick-and-feed {
     display: flex;
@@ -157,7 +160,7 @@
     background: #72828E;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: relative;
 }
@@ -311,4 +314,350 @@
 
 .share-text {
     padding: 14px 0;
+}
+
+@media (max-width:1599px) {
+    .donate__content {
+        width: 100%;
+        padding: 40px 27px 27px 30px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .panda-img {
+        background-position-x: -170px;
+    }
+
+    .donate__content {
+        padding: 40px 27px 27px 30px;
+    }
+
+    .donate__header {
+        margin: 0 95px 23px 0;
+    }
+
+    .donate__subheader {
+        margin: 33px 0 38px 0;
+    }
+
+    .donate__header__text {
+        font-size: 14px;
+    }
+
+    .donate-pick-and-feed {
+        padding: 24px 44px;
+        /* background: rgba(255, 255, 255, 0.52); */
+    }
+
+    .donate-pick-and-feed>h2 {
+        margin: 0 0 0 -18px;
+    }
+
+    .donate-pick-and-feed>p {
+        margin: 12px 0;
+    }
+
+    .panda__container {
+        padding: 50px 0 27px 0;
+    }
+
+    .radio-input-container:first-of-type {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .donate-pick-and-feed {
+        padding: 24px 17px;
+    }
+}
+
+@media (max-width:800px) {
+
+    .donate-pick-and-feed {
+        padding: 24px 0;
+    }
+
+    .donate-pick-and-feed>p {
+        text-align: center;
+    }
+}
+
+@media (max-width:640px) {
+
+    .radio-input-container:nth-of-type(2) {
+        display: none;
+    }
+
+    .radio-input-container:nth-of-type(3) {
+        display: none;
+    }
+
+    .panda-img {
+        height: 335px;
+        background-position-x: -270px;
+        position: relative;
+        top: 34px;
+    }
+
+    .donate__content {
+        padding: 64px 12px 27px 20px;
+    }
+
+    .donate__header {
+        font-size: 24px;
+        line-height: 120%;
+        margin: 0 2.5rem 1rem 0;
+    }
+
+    .donate__subheader {
+        margin: 0.7rem 0 2rem 0;
+    }
+
+    .donate__header__text {
+        font-size: 16px;
+    }
+
+    .panda__container {
+        padding: 24px 0 12px 0;
+    }
+
+    .donate-pick-and-feed>p {
+        margin: 23px 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .donate-pick-and-feed>h2 {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    .donate-pick-and-feed>p {
+        font-size: 20px;
+    }
+
+    .donate__content {
+        padding: 5rem 0.5rem 1.5rem 0.5rem;
+    }
+
+    .panda-x {
+        padding: 22px 24px 0px 0px;
+    }
+
+    .radio-input-container>label {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 400px) {
+    .panda__container {
+        padding: 0 0 5px 0;
+    }
+
+    .panda-diet-count {
+        padding: 40px 0 0 0;
+    }
+
+    .panda-diet-count__num {
+        font-size: 43px;
+        padding: 0px 14px 0 0;
+    }
+
+    .panda-diet-count__text {
+        font-size: 11px;
+        margin: 0;
+        padding-top: 13px;
+    }
+
+    .panda-x {
+        padding: 7px 12px 0 6px;
+    }
+
+    .panda-x>img {
+        width: 9px;
+    }
+
+    .panda-widget {
+        width: 58%;
+    }
+
+    .panda-widget>img {
+        width: 91%;
+    }
+
+    .radiob {
+        width: 5px;
+        height: 5px;
+    }
+
+    .amount-form-description {
+        margin: 0;
+    }
+
+    .radios {
+        height: 15px;
+        margin-top: 6px;
+        margin-bottom: 34px;
+    }
+
+    .radio-input-container {
+        top: 14px;
+    }
+
+    .radio-input-container>label {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .radio-input-container>label {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .donation-sum::before {
+        content: url(../../assets/icons/dollar-small.png);
+    }
+
+    .radiob::before {
+        width: 25px;
+        height: 25px;
+        top: -12px;
+        left: -10px;
+    }
+
+    .radiob::after {
+        width: 15.95px;
+        height: 15.95px;
+        top: -7px;
+        left: -6px;
+    }
+
+    .radiob:checked+.donation-sum::before {
+        content: url(../../assets/icons/dollar-orange-small.png);
+    }
+}
+
+@media (max-width: 320px) {
+    .panda-img {
+        height: 187px;
+        background-position-x: -151px;
+    }
+
+    .donate__content {
+        padding: 4rem 0.1rem 0.5rem 0.5rem;
+    }
+
+    .donate__header {
+        margin: 0 0.5rem 1rem 0;
+    }
+
+    .donate__subheader {
+        margin: 1.5rem 0 2rem 0;
+    }
+
+    .donate__subheader {
+        font-size: 24px;
+    }
+
+    .donate-pick-and-feed {
+        padding: 16px 0;
+    }
+
+    .donate-pick-and-feed>h2 {
+        font-size: 24px;
+    }
+
+    .donate-pick-and-feed>p {
+        margin: 14px 0 12px;
+        font-size: 16px;
+    }
+
+    .panda__container {
+        padding: 0 0 5px 0;
+    }
+
+    .panda-diet-count {
+        padding: 40px 0 0 0;
+    }
+
+    .panda-diet-count__num {
+        font-size: 43px;
+        padding: 0px 14px 0 0;
+    }
+
+    .panda-diet-count__text {
+        font-size: 11px;
+        margin: 0;
+        padding-top: 13px;
+    }
+
+    .panda-x {
+        padding: 7px 12px 0 6px;
+    }
+
+    .panda-x>img {
+        width: 9px;
+    }
+
+    .panda-widget {
+        width: 58%;
+    }
+
+    .panda-widget>img {
+        width: 91%;
+    }
+
+    .radiob {
+        width: 5px;
+        height: 5px;
+    }
+
+    .amount-form-description {
+        margin: 0;
+    }
+
+    .radios {
+        height: 15px;
+        margin-top: 6px;
+        margin-bottom: 34px;
+    }
+
+    .radio-input-container {
+        top: 14px;
+    }
+
+    .radio-input-container>label {
+        font-size: 12px;
+        margin-top: 15px;
+    }
+
+    .radio-input-container>label {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .donation-sum::before {
+        content: url(../../assets/icons/dollar-small.png);
+    }
+
+    .radiob::before {
+        width: 25px;
+        height: 25px;
+        top: -12px;
+        left: -10px;
+    }
+
+    .radiob::after {
+        width: 15.95px;
+        height: 15.95px;
+        top: -7px;
+        left: -6px;
+    }
+
+    .radiob:checked+.donation-sum::before {
+        content: url(../../assets/icons/dollar-orange-small.png);
+    }
+
 }

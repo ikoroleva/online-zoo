@@ -1149,7 +1149,7 @@
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .pick-and-feed {
         padding: 1rem 0 0.3rem;
     }
