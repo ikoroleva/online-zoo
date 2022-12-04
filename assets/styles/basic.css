@@ -15,6 +15,10 @@ body {
     padding: 0;
 }
 
+.locked {
+    overflow: hidden;
+}
+
 .container-centered {
     width: 1600px;
     margin: 0 auto;
