@@ -1,0 +1,58 @@
+const petsArray = [
+    {
+        id: 'card-panda',
+        name: 'Giant Pandas',
+        area: 'Native to Southwest China',
+        diet: '../../assets/icons/banana-bamboo_icon.png',
+        src: '../../assets/images/pandas.png',
+    },
+    {
+        id: 'card-eagle',
+        name: 'Eagles',
+        area: 'Native to South America',
+        diet: '../../assets/icons/meet-fish_icon.png',
+        src: '../../assets/images/eagle.png',
+    },
+    {
+        id: 'card-gorilla',
+        name: 'Gorillas',
+        area: 'Native to Congo',
+        diet: '../../assets/icons/banana-bamboo_icon.png',
+        src: '../../assets/images/gorilla.png',
+    },
+    {
+        id: 'card-sloth',
+        name: 'Two-toed Sloth',
+        area: 'Mesoamerica, South America',
+        diet: '../../assets/icons/banana-bamboo_icon.png',
+        src: '../../assets/images/sloth.png',
+    },
+    {
+        id: 'card-cheetah',
+        name: 'Cheetahs',
+        area: 'Native to Africa',
+        diet: '../../assets/icons/meet-fish_icon.png',
+        src: '../../assets/images/cheetah.png',
+    },
+    {
+        id: 'card-pinguin',
+        name: 'Penguins',
+        area: 'Native to Antarctica',
+        diet: '../../assets/icons/meet-fish_icon.png',
+        src: '../../assets/images/pinguin.png',
+    },
+    {
+        id: 'card-alligator',
+        name: 'Alligators',
+        area: 'Native to United States',
+        diet: '../../assets/icons/meet-fish_icon.png',
+        src: '../../assets/images/alligator.png',
+    },
+    {
+        id: 'card-gorilla2',
+        name: 'Gorillas',
+        area: 'Native to Congo',
+        diet: '../../assets/icons/banana-bamboo_icon.png',
+        src: '../../assets/images/gorilla2.png',
+    },
+];
