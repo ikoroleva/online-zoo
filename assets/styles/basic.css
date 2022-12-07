@@ -1,0 +1,35 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F3F2;
+    margin: 0;
+    padding: 0;
+}
+
+.locked {
+    overflow: hidden;
+}
+
+.container-centered {
+    width: 1600px;
+    margin: 0 auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1599px) {
+    .container-centered {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
