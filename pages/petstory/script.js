@@ -1,8 +1,17 @@
 const tabletSize = 640;
 const mobileSize = 320;
-
+const smallDesktopSize = 1000;
 let screenSize;
-const changeSlider = new Event('changeSlider');
+
+window.addEventListener('resize', () => {
+    const currentScreenSize = screenSize;
+    getScreenSize();
+
+    if (currentScreenSize != screenSize) {
+        document.querySelectorAll('.pet__card').forEach((child) => { child.remove(); })
+        fill(screenSize == 'desktop' || screenSize == 'smallDesktop' ? 6 : 4);
+    }
+})
 
 const shuffle = (array, count) => {
     let pets = [].concat(array);
@@ -13,15 +22,21 @@ const shuffle = (array, count) => {
     return pets.slice(0, count);
 }
 
-let screenWidth = this.document.documentElement.clientWidth;
-let slider;
+const getScreenSize = () => {
+    let screenWidth = this.document.documentElement.clientWidth;
 
-if (screenWidth > tabletSize) {
-    screenSize = 'desktop';
-} else if (screenWidth > mobileSize) {
-    screenSize = 'tablet';
-} else {
-    screenSize = 'mobile';
+    if (screenWidth > smallDesktopSize) {
+        screenSize = 'desktop';
+    }
+    else if (screenWidth > tabletSize) {
+        screenSize = 'smallDesktop';
+    }
+    else if (screenWidth > mobileSize) {
+        screenSize = 'tablet';
+    }
+    else {
+        screenSize = 'mobile';
+    }
 }
 
 const createCard = (pet) => {
@@ -41,14 +56,80 @@ const createCard = (pet) => {
 
 const petsGallery = document.querySelector('.pets__gallery');
 
-const getColumn = (index) => {
-    if (index == 0 || index == 3) {
-        return 'column2';
-    } if (index == 1 || index == 4) {
-        return 'column3';
-    } if (index == 2 || index == 5) {
-        return 'column4';
-    } return '';
+const getColumnDesktop = (index) => {
+
+    switch (index) {
+        case 0:
+        case 3:
+            return 'column2';
+        case 1:
+        case 4:
+            return 'column3';
+        case 2:
+        case 5:
+            return 'column4';
+        default:
+            return '';
+    }
+}
+
+const getColumnSmallDesktop = (index) => {
+
+    switch (index) {
+        case 0:
+        case 3:
+            return 'column1';
+        case 1:
+        case 4:
+            return 'column2';
+        case 2:
+        case 5:
+            return 'column3';
+        default:
+            return '';
+    }
+}
+
+const getRowSmallDesktop = (index) => {
+    switch (index) {
+        case 0:
+        case 1:
+        case 2:
+            return 'row1';
+        case 3:
+        case 4:
+        case 5:
+            return 'row3';
+        default:
+            return '';
+    }
+}
+
+
+const getColumnTablet = (index) => {
+    switch (index) {
+        case 0:
+        case 2:
+            return 'column1';
+        case 1:
+        case 3:
+            return 'column2';
+        default:
+            return '';
+    }
+}
+
+const getRowTablet = (index) => {
+    switch (index) {
+        case 0:
+        case 1:
+            return 'row1';
+        case 2:
+        case 3:
+            return 'row3';
+        default:
+            return '';
+    }
 }
 
 const fill = (size) => {
@@ -56,20 +137,33 @@ const fill = (size) => {
         const petCard = document.createElement('div');
         petCard.classList.add('item');
         petCard.classList.add('pet__card');
-        petCard.classList.add(getColumn(index));
+
         petCard.id = pet.id;
         petCard.innerHTML = createCard(pet);
+        if (screenSize == 'desktop') {
+            petCard.classList.add(getColumnDesktop(index));
+        }
+        else if (screenSize == 'smallDesktop') {
+            petCard.classList.add(getColumnSmallDesktop(index));
+            petCard.classList.add(getRowSmallDesktop(index));
+        }
+        else if (screenSize == 'tablet') {
+            petCard.classList.add(getColumnTablet(index));
+            petCard.classList.add(getRowTablet(index));
+        }
         petsGallery.append(petCard);
     });
-};
-fill(screenSize == 'desktop' ? 6 : 4);
+}
+
+getScreenSize();
+fill(screenSize == 'desktop' || screenSize == 'smallDesktop' ? 6 : 4);
 
 document.querySelector('.left').addEventListener('click', () => {
     document.querySelectorAll('.pet__card').forEach((child) => { child.remove(); })
-    fill(screenSize == 'desktop' ? 6 : 4);
+    fill(screenSize == 'desktop' || screenSize == 'smallDesktop' ? 6 : 4);
 })
 
 document.querySelector('.right').addEventListener('click', () => {
     document.querySelectorAll('.pet__card').forEach((child) => { child.remove(); })
-    fill(screenSize == 'desktop' ? 6 : 4);
+    fill(screenSize == 'desktop' || screenSize == 'smallDesktop' ? 6 : 4);
 })

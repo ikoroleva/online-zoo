@@ -498,12 +498,6 @@
     align-self: center;
 }
 
-/* .pets__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 1%;
-} */
 
 .column2 {
     grid-column: 2;
@@ -707,36 +701,19 @@
         display: flex;
     }
 
-    #card-panda {
+    .column1 {
         grid-column: 1;
+    }
+
+
+    .row1 {
         grid-row: 1;
     }
 
-    #card-eagle {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    #card-gorilla {
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    #card-sloth {
-        grid-column: 1;
+    .row3 {
         grid-row: 3;
     }
 
-    #card-cheetah {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    #card-pinguin {
-        grid-column: 3;
-        grid-row: 3;
-
-    }
 
     .item.pets__gallery__nav.right {
         grid-row: 2;
@@ -745,24 +722,6 @@
         flex-direction: row-reverse;
     }
 
-    /* .pets__gallery__nav {
-        display: flex;
-        width: 50%;
-        top: 42%;
-        justify-content: flex-end;
-
-    }
-
-    .pets__gallery__nav.left {
-        left: 0;
-        padding-right: 5.3rem;
-    }
-
-    .pets__gallery__nav.right {
-        right: 0;
-        flex-direction: row-reverse;
-        padding-left: 5.3rem;
-    } */
 
     .pets__section__picture_left {
         position: absolute;
@@ -801,33 +760,25 @@
         justify-content: flex-end;
     }
 
-    #card-panda {
+
+
+    .column1 {
         grid-column: 1;
+
+    }
+
+    .column2 {
+        grid-column: 2;
+    }
+
+    .row1 {
         grid-row: 1;
     }
 
-    #card-eagle {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    #card-gorilla {
-        grid-column: 1;
+    .row3 {
         grid-row: 3;
     }
 
-    #card-sloth {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
-    #card-cheetah {
-        display: none;
-    }
-
-    #card-pinguin {
-        display: none;
-    }
 
     .item.pets__gallery__nav.right {
         grid-row: 2;
